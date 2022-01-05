@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <title>JS</title>
+    <style>
+        body {
+            background-color: palegoldenrod;
+            text-align: center;
+        }
+
+        table {
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            min-width: 50px;
+            max-width: 100px
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <!-- table goes here -->
+
+    </div>
+    <script>
+        let table = document.getElementsByClassName("table");
+        let number = prompt("Enter Number to print Table");
+        for (let i = 1; i <= 10; i++) {
+            let t = `<table>
+              <tr>
+                  <td>${number * i}</td>
+              </tr>
+          </table>`;
+            table.innerHTML = document.write(t);
+        }
+    </script>
+</body>
+
+</html>
